@@ -6,7 +6,8 @@ services:
     build: ./client
     ports:
       - "3000:3000"
-    links: app
+    links:
+      - app
 
   app: 
     container_name: app
